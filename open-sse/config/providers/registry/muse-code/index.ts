@@ -23,7 +23,7 @@ function museSparkModel(
     toolCalling: true,
     supportsVision: options.vision !== false,
     targetFormat: "openai-responses" as const,
-    unsupportedParams: ["logprobs", "topLogprobs", "logitBias"],
+    unsupportedParams: ["logprobs", "topLogprobs", "logitBias", "include"],
   };
 }
 
@@ -68,7 +68,7 @@ export const muse_codeProvider: RegistryEntry = buildOpenAiCompatibleRegistryEnt
       toolCalling: true,
       supportsVision: true,
       targetFormat: "openai-responses",
-      unsupportedParams: ["logprobs", "topLogprobs", "logitBias"],
+      unsupportedParams: ["logprobs", "topLogprobs", "logitBias", "include"],
     },
     {
       id: "llama-4-scout",
@@ -80,7 +80,7 @@ export const muse_codeProvider: RegistryEntry = buildOpenAiCompatibleRegistryEnt
       toolCalling: true,
       supportsVision: true,
       targetFormat: "openai-responses",
-      unsupportedParams: ["logprobs", "topLogprobs", "logitBias"],
+      unsupportedParams: ["logprobs", "topLogprobs", "logitBias", "include"],
     },
     {
       id: "llama-3.3-70b",
@@ -90,7 +90,7 @@ export const muse_codeProvider: RegistryEntry = buildOpenAiCompatibleRegistryEnt
       supportsReasoning: false,
       toolCalling: true,
       targetFormat: "openai-responses",
-      unsupportedParams: ["logprobs", "topLogprobs"],
+      unsupportedParams: ["logprobs", "topLogprobs", "include"],
     },
     {
       id: "llama-3.1-405b",
@@ -100,7 +100,7 @@ export const muse_codeProvider: RegistryEntry = buildOpenAiCompatibleRegistryEnt
       supportsReasoning: false,
       toolCalling: true,
       targetFormat: "openai-responses",
-      unsupportedParams: ["logprobs", "topLogprobs"],
+      unsupportedParams: ["logprobs", "topLogprobs", "include"],
     },
     {
       id: "llama-3.1-70b",
@@ -110,7 +110,7 @@ export const muse_codeProvider: RegistryEntry = buildOpenAiCompatibleRegistryEnt
       supportsReasoning: false,
       toolCalling: true,
       targetFormat: "openai-responses",
-      unsupportedParams: ["logprobs", "topLogprobs"],
+      unsupportedParams: ["logprobs", "topLogprobs", "include"],
     },
     {
       id: "llama-3.1-8b",
@@ -120,7 +120,7 @@ export const muse_codeProvider: RegistryEntry = buildOpenAiCompatibleRegistryEnt
       supportsReasoning: false,
       toolCalling: true,
       targetFormat: "openai-responses",
-      unsupportedParams: ["logprobs", "topLogprobs"],
+      unsupportedParams: ["logprobs", "topLogprobs", "include"],
     },
     {
       id: "llama-3.2-90b-vision",
@@ -131,7 +131,7 @@ export const muse_codeProvider: RegistryEntry = buildOpenAiCompatibleRegistryEnt
       toolCalling: true,
       supportsVision: true,
       targetFormat: "openai-responses",
-      unsupportedParams: ["logprobs", "topLogprobs"],
+      unsupportedParams: ["logprobs", "topLogprobs", "include"],
     },
     {
       id: "llama-3.2-11b-vision",
@@ -142,7 +142,7 @@ export const muse_codeProvider: RegistryEntry = buildOpenAiCompatibleRegistryEnt
       toolCalling: true,
       supportsVision: true,
       targetFormat: "openai-responses",
-      unsupportedParams: ["logprobs", "topLogprobs"],
+      unsupportedParams: ["logprobs", "topLogprobs", "include"],
     },
   ],
 });
