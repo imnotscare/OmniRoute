@@ -1,0 +1,1 @@
+- **fix(providers):** Filter `include` from Muse Code requests to prevent 400 Bad Request on reasoning models.
