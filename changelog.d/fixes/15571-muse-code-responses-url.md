@@ -1,0 +1,1 @@
+- **fix(providers):** keep Responses endpoint for Muse Code minted baseUrl
